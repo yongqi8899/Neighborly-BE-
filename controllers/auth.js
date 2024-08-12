@@ -18,24 +18,11 @@ export const signIn = asyncHandler(async (req, res) => {
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
     expiresIn: '7d'
   });
-  const isProduction = process.env.NODE_ENV === 'production';
-  // const cookieOptions = {
-  //   httpOnly: true,
-  //   sameSite: isProduction ? 'None' : 'Lax',
-  //   secure: isProduction
-  // };
   res.json(token);
   res.status(201).json({ success: 'welcome back' });
 });
 
 export const signOut = asyncHandler(async (req, res) => {
-  const isProduction = process.env.NODE_ENV === 'production';
-  // const cookieOptions = {
-  //   httpOnly: true,
-  //   sameSite: isProduction ? 'None' : 'Lax',
-  //   secure: isProduction
-  // };
-  // res.clearCookie('token');
   res.status(200).json({ success: 'goodbye' });
 });
 
@@ -53,12 +40,6 @@ export const signUp = asyncHandler(async (req, res) => {
   const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
     expiresIn: '7d'
   });
-  const isProduction = process.env.NODE_ENV === 'production';
-  // const cookieOptions = {
-  //   httpOnly: true,
-  //   sameSite: isProduction ? 'None' : 'Lax',
-  //   secure: isProduction
-  // };
   res.json(token);
   res.status(201).json({ success: 'welcome aboard' });
 });
