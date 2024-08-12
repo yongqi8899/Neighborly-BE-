@@ -56,7 +56,5 @@ The following endpoints are available:
 
 ## Configuration
 
-Environment-specific configurations can be set in `.env` file. take a look at the `example.env` file.
-
 Create a new `.env` file and then copy the contents of `example.env` into it, you may change the `JWT_SECRET` and `PORT` values.
 
