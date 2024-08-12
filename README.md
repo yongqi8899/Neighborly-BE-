@@ -1,4 +1,4 @@
-# Event Management API Server
+# Post Management API Server
 
 This project is a Node.js Express API server designed for managing posts. It includes Swagger UI for testing and interacting with the API endpoints.
 
@@ -40,12 +40,11 @@ The following endpoints are available:
 
 ### posts
 
-<!-- - **POST /api/posts** Create a new event.
-- **GET /api/posts** Get all posts.
-- **GET /api/posts/:id** Get a single event by ID.
-- **PUT /api/posts/:id** Update an existing event.
-- **DELETE /api/posts/:id** Delete an event by ID.
-- **GET /api/posts/upcoming** Get upcoming posts. -->
+- **POST /post** Create a new post.
+- **GET /post** Get all post.
+- **GET /post/:id** Get a single post by ID.
+- **PUT /post/:id** Update an existing post.
+- **DELETE /post/:id** Delete an post by ID.
 
 ### Auth
 
