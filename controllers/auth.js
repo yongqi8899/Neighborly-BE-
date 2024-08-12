@@ -24,7 +24,7 @@ export const signIn = asyncHandler(async (req, res) => {
   //   sameSite: isProduction ? 'None' : 'Lax',
   //   secure: isProduction
   // };
-  res.json('token', token);
+  res.json(token);
   res.status(201).json({ success: 'welcome back' });
 });
 
@@ -59,6 +59,6 @@ export const signUp = asyncHandler(async (req, res) => {
   //   sameSite: isProduction ? 'None' : 'Lax',
   //   secure: isProduction
   // };
-  res.json('token', token);
+  res.json(token);
   res.status(201).json({ success: 'welcome aboard' });
 });
